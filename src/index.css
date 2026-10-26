@@ -7788,3 +7788,63 @@ html.cards-open body {
   .dash.is-cards .rewind__panel--4 .rewind__months { height: 24px; margin-top: 6px; }
   .dash.is-cards .rewind__panel--4 .rewind__feature > p:not([class]) { margin-block: 4px; line-height: 1.2; }
 }
+
+/* New catalog music lives on Spotify; the record supplies a locally chosen starting point. */
+.discovery {
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: clamp(18px, 3vw, 36px);
+}
+.discovery > .segmented { width: fit-content; max-width: 100%; }
+.discovery__intro { margin-block: 18px 30px; color: var(--muted); }
+.discovery__body { max-width: 720px; margin: auto; }
+.discovery__seed { display: flex; gap: 24px; align-items: center; }
+.discovery__seed > .cover { flex: none; }
+.discovery__identity { min-width: 0; }
+.discovery__identity h3 { font-size: clamp(28px, 4vw, 46px); overflow-wrap: anywhere; }
+.discovery__label { margin: 0 0 8px; color: var(--muted); font-size: 0.85rem; }
+.discovery__song { margin-block: 12px 0; font-family: var(--serif); font-style: italic; font-size: 1.5rem; overflow-wrap: anywhere; }
+.discovery__evidence { margin-block: 24px; color: var(--muted); font-size: 0.9rem; }
+.discovery__steps { border-block: 1px solid var(--line); padding-block: 12px; }
+.discovery__steps p { margin-block: 8px; }
+.discovery__steps b { color: var(--accent); margin-right: 8px; }
+.discovery__links { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-block: 24px; }
+.discovery__links a { text-decoration: none; }
+.discovery__search { font-size: 0.85rem; text-decoration: underline !important; }
+.discovery__next { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.discovery__next span { font-size: 0.85rem; color: var(--muted); }
+.discovery__next button:disabled { opacity: 0.35; cursor: default; }
+.discovery__note { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--line-strong); font-size: 0.8rem; color: var(--muted); }
+.discovery__note p { margin-block: 6px 0; }
+.discovery__empty { display: flex; flex-direction: column; justify-content: center; min-height: 280px; max-width: 620px; margin: auto; }
+.discovery__empty h3 { font-size: clamp(25px, 4vw, 42px); }
+.discovery__empty p { color: var(--muted); }
+.dash.is-cards .discovery { display: flex; flex-direction: column; height: 100%; padding: 10px 12px; border-radius: 12px; }
+.dash.is-cards .discovery > .segmented { width: 100%; flex: none; }
+.dash.is-cards .discovery .segmented__option { flex: 1; padding: 7px 5px; font-size: 0.7rem; white-space: nowrap; }
+.dash.is-cards .discovery__intro { margin-block: 8px; font-size: 0.72rem; line-height: 1.25; }
+.dash.is-cards .discovery__body { flex: 1; min-height: 0; width: 100%; display: flex; flex-direction: column; justify-content: center; }
+.dash.is-cards .discovery__seed { gap: 12px; }
+.dash.is-cards .discovery__identity h3 { font-size: clamp(18px, 5cqh, 28px); }
+.dash.is-cards .discovery__label { font-size: 0.65rem; margin-bottom: 4px; }
+.dash.is-cards .discovery__song { font-size: 1.1rem; margin-top: 5px; }
+.dash.is-cards .discovery__identity h3,
+.dash.is-cards .discovery__song { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.dash.is-cards .discovery__evidence { font-size: 0.65rem; line-height: 1.25; margin-block: 8px; }
+.dash.is-cards .discovery__steps { padding-block: 4px; font-size: 0.72rem; line-height: 1.3; }
+.dash.is-cards .discovery__steps p { margin-block: 4px; }
+.dash.is-cards .discovery__links { margin-block: 10px; gap: 7px; }
+.dash.is-cards .discovery__links .button { width: 100%; justify-content: center; min-height: 34px; padding: 7px; font-size: 0.78rem; }
+.dash.is-cards .discovery__search { font-size: 0.65rem; }
+.dash.is-cards .discovery__next { gap: 5px; }
+.dash.is-cards .discovery__next span { font-size: 0.7rem; }
+.dash.is-cards .discovery__next .chip-button { padding: 4px 12px; min-height: 28px; }
+.dash.is-cards .discovery__note { margin-top: 8px; padding-top: 6px; font-size: 0.6rem; line-height: 1.25; flex: none; }
+.dash.is-cards .discovery__empty { flex: 1; min-height: 0; }
+.dash.is-cards .discovery__empty h3 { font-size: clamp(22px, 7cqh, 32px); }
+.dash.is-cards .discovery__empty p { font-size: 0.8rem; }
+.dash.is-cards .discovery__links { margin-block: 6px; }
+.dash.is-cards .discovery__identity h3 { font-size: 18px; line-height: 1.1; -webkit-line-clamp: 1; }
+.dash.is-cards .discovery__song { font-size: 16px; line-height: 1.15; -webkit-line-clamp: 1; }
+.dash.is-cards .discovery__label { line-height: 1.2; }

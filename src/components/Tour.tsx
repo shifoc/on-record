@@ -60,6 +60,10 @@ const TIPS: Record<string, Tip> = {
     try: 'Switch to songs, albums or podcasts.',
     then: 'Now rank them by plays instead of time.',
   },
+  discovery: {
+    try: 'Choose favorites, recent taste or a side road.',
+    then: 'Open a starting song on Spotify, then choose Go to Radio in its menu.',
+  },
   notes: {
     try: `${TAP} Another take for a different line.`,
     then: 'Scroll down and guess your own habits.',

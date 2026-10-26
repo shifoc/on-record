@@ -22,6 +22,7 @@ Everything runs in your browser. There's no server, and your data is never uploa
 | **Constellation** | Force-directed map of artists you play back to back. Clusters are your scenes. |
 | **Pulse** | An *Unknown Pleasures*-style ridgeline of your top artists, in the order you found them. |
 | **The Charts** | Top artists, songs, albums and podcasts with generative covers. |
+| **Find something new** | Three routes into music outside your export: favorites, the last 90 recorded days, and repeated artists beyond your top three. Each explains its evidence, opens a starting song on Spotify, and guides you to Go to Radio. Spotify supplies the related music and may include familiar songs. No catalog requests or Spotify login inside the app; only an explicit click opens an external link. The invented demo does not link fake artists. |
 | **Liner Notes** | A listener-type card, records (streaks, marathons, obsessions, the artist you went quiet on) and habits. On a phone, the four facts you'd never have guessed. |
 | **The Poster** | A shareable PNG in four designs: Deep dive (the record fully annotated, with small charts underneath), The Record, Sleeve (an album cover with a tracklist) and Annotated (a labelled figure). Three sizes (4:5 post, 9:16 story, 2:3 print), on black or cream. Deep dive is 4:5 only, and can come out several times bigger for reading up close. On phones it goes straight to the share sheet. |
 

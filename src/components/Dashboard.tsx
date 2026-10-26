@@ -17,6 +17,7 @@ import {
 } from '../data/insights'
 import { canHide, filterByYear, filterPlays, funStats, getYears, newArtistsIn, platforms, sameFilter, summarize, topItems, wearOut, weekHourGrid } from '../data/stats'
 import { buildRewind } from '../data/rewind'
+import { discoverySeeds } from '../data/discovery'
 import { formatHour, formatNumber } from '../lib/format'
 import { useMediaQuery } from '../lib/hooks'
 import { isLaunchKey, LAUNCH_KEY } from '../lib/keys'
@@ -43,6 +44,7 @@ import { Pulse } from './Pulse'
 import { Race } from './Race'
 import { River, RiverTable } from './River'
 import { Rewind } from './Rewind'
+import { Discovery } from './Discovery'
 import { TopCharts } from './TopCharts'
 import { Tour, UpNext } from './Tour'
 import { TrackMenu, type Track } from './TrackMenu'
@@ -60,6 +62,7 @@ const TRACKS: Track[] = [
   { id: 'constellation', num: 'C1', title: 'Constellation' },
   { id: 'pulse', num: 'C2', title: 'Pulse' },
   { id: 'charts', num: 'C3', title: 'The Charts' },
+  { id: 'discovery', num: 'C4', title: 'Find something new' },
   { id: 'notes', num: 'D1', title: 'Liner Notes' },
   { id: 'poster', num: 'D2', title: 'The Poster' },
 ]
@@ -145,6 +148,7 @@ export function Dashboard({ result, isSample, onReset }: Props) {
   const plays = useMemo(() => filterByYear(all, year), [all, year])
   const summary = useMemo(() => summarize(plays), [plays])
   const rewind = useMemo(() => buildRewind(plays, all, year), [plays, all, year])
+  const discovery = useMemo(() => discoverySeeds(plays), [plays])
 
   // Colors follow the artist: all-time top 10 keep their color when you pick a year
   const allTop = useMemo(() => topItems(all, 'artist', 'time', TOP_ARTISTS).map((r) => r.label), [all])
@@ -687,6 +691,10 @@ export function Dashboard({ result, isSample, onReset }: Props) {
 
             <Chapter id="charts" num="C3" title="The Charts" hint="Your rankings." lede="The rankings. Every cover is generated from the name, since nothing is fetched from anywhere.">
               <TopCharts plays={plays} onHide={(artist) => hideArtists([artist])} hidden={hidden} onManage={() => setLauncher('artists')} />
+            </Chapter>
+
+            <Chapter id="discovery" num="C4" title="Find something new" hint="Your taste as a starting point for new music on Spotify." lede="Use what you loved as a way into music outside your export. Pick a starting point, then let Spotify Radio take it further.">
+              <Discovery key={viewKey} seeds={discovery} isSample={isSample} />
             </Chapter>
 
             <Side label="Side D" title={SIDES.D} />
