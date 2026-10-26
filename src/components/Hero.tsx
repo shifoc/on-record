@@ -14,9 +14,10 @@ interface Props {
   newArtists: number | null
   onPlay: () => void
   onPoster: () => void
+  onRewind: () => void
 }
 
-export function Hero({ summary, year, span, isSample, topArtist, hours, newArtists, onPlay, onPoster }: Props) {
+export function Hero({ summary, year, span, isSample, topArtist, hours, newArtists, onPlay, onPoster, onRewind }: Props) {
   const ref = useRef<HTMLElement>(null)
   const seen = useSeen(ref, 0.1)
   const total = summary.totalMs / 3_600_000
@@ -60,6 +61,7 @@ export function Hero({ summary, year, span, isSample, topArtist, hours, newArtis
           <button type="button" className="button button--big button--ghost" onClick={onPoster}>
             Make your poster
           </button>
+          {summary.musicMs > 0 && <button type="button" className="button button--big button--ghost" onClick={onRewind}>Your Rewind</button>}
         </div>
       </section>
 

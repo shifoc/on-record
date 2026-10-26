@@ -15,12 +15,14 @@ Everything runs in your browser. There's no server, and your data is never uploa
 | **The Record** | Every day of listening as a vinyl record: one groove per day, arcs placed by time of day. Tap a groove (or use the slider) and the deck beside it unrolls that day into a 24-hour strip; the tonearm follows. On a phone's card, put a finger on the record and the needle follows it; pinch or double-tap to zoom. |
 | **Eras** | Streamgraph of your top artists, with the stretches one artist led your listening called out as eras. |
 | **The Race** | Bar chart race of cumulative hours per artist. Turn it into a 9:16 story video, made on your device and ready for Instagram. |
+| **Your Rewind** | An interactive personal recap: a headline with a downloadable story PNG, changes from the previous calendar year, discoveries with a guess and reveal, artists returning after a long absence, and a soundtrack for every month. Uses counted music plays of at least 30 seconds; first recorded means first seen in the loaded history. |
 | **Around the Clock** | 24-hour radial chart split into day and night, your artist for each part of the day (on a phone, the one you lean on more than usual), and a weekday × hour dot matrix. |
 | **Every Day** | Calendar heatmap, one square per day, a year at a time. On a phone it's a calendar: pick a year, a month and a day, or find a date, and the day opens with everything you played. |
 | **Love / Hate** | The song you let play most against the one you skip most, then (on a bigger screen) every most-played song by plays vs. skip rate. |
 | **Constellation** | Force-directed map of artists you play back to back. Clusters are your scenes. |
 | **Pulse** | An *Unknown Pleasures*-style ridgeline of your top artists, in the order you found them. |
 | **The Charts** | Top artists, songs, albums and podcasts with generative covers. |
+| **Find something new** | Three routes into music outside your export: favorites, the last 90 recorded days, and repeated artists beyond your top three. Each explains its evidence, opens a starting song on Spotify, and guides you to Go to Radio. Spotify supplies the related music and may include familiar songs. No catalog requests or Spotify login inside the app; only an explicit click opens an external link. The invented demo does not link fake artists. |
 | **Liner Notes** | A listener-type card, records (streaks, marathons, obsessions, the artist you went quiet on) and habits. On a phone, the four facts you'd never have guessed. |
 | **The Poster** | A shareable PNG in four designs: Deep dive (the record fully annotated, with small charts underneath), The Record, Sleeve (an album cover with a tracklist) and Annotated (a labelled figure). Three sizes (4:5 post, 9:16 story, 2:3 print), on black or cream. Deep dive is 4:5 only, and can come out several times bigger for reading up close. On phones it goes straight to the share sheet. |
 

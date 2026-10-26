@@ -17,6 +17,8 @@ const FEATURES = [
   ['The Record', 'every day pressed into vinyl'],
   ['Eras', 'who ruled which months'],
   ['The Race', 'your artists, racing'],
+  ['Your Rewind', 'discoveries, comebacks and your monthly soundtrack'],
+  ['Find something new', 'your taste, a way into more music'],
   ['Around the Clock', 'your 3 AM artist'],
   ['Love / Hate', 'songs you can’t finish'],
   ['Constellation', 'your scenes, mapped'],
