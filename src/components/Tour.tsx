@@ -32,6 +32,10 @@ const TIPS: Record<string, Tip> = {
     try: 'Drag the slider to rewind the race.',
     then: 'Press play to run it again from there.',
   },
+  rewind: {
+    try: 'Use the numbered pages to explore your recap.',
+    then: 'Guess your returning discoveries, or pick a month for its soundtrack.',
+  },
   clock: {
     try: `${TAP} an hour on the dial to see who’s on.`,
     then: `Further down, ${TAP.toLowerCase()} any hour of the week.`,

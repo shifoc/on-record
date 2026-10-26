@@ -15,6 +15,7 @@ Everything runs in your browser. There's no server, and your data is never uploa
 | **The Record** | Every day of listening as a vinyl record: one groove per day, arcs placed by time of day. Tap a groove (or use the slider) and the deck beside it unrolls that day into a 24-hour strip; the tonearm follows. On a phone's card, put a finger on the record and the needle follows it; pinch or double-tap to zoom. |
 | **Eras** | Streamgraph of your top artists, with the stretches one artist led your listening called out as eras. |
 | **The Race** | Bar chart race of cumulative hours per artist. Turn it into a 9:16 story video, made on your device and ready for Instagram. |
+| **Your Rewind** | An interactive personal recap: a headline with a downloadable story PNG, changes from the previous calendar year, discoveries with a guess and reveal, artists returning after a long absence, and a soundtrack for every month. Uses counted music plays of at least 30 seconds; first recorded means first seen in the loaded history. |
 | **Around the Clock** | 24-hour radial chart split into day and night, your artist for each part of the day (on a phone, the one you lean on more than usual), and a weekday × hour dot matrix. |
 | **Every Day** | Calendar heatmap, one square per day, a year at a time. On a phone it's a calendar: pick a year, a month and a day, or find a date, and the day opens with everything you played. |
 | **Love / Hate** | The song you let play most against the one you skip most, then (on a bigger screen) every most-played song by plays vs. skip rate. |

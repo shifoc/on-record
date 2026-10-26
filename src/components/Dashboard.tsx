@@ -16,6 +16,7 @@ import {
   takes,
 } from '../data/insights'
 import { canHide, filterByYear, filterPlays, funStats, getYears, newArtistsIn, platforms, sameFilter, summarize, topItems, wearOut, weekHourGrid } from '../data/stats'
+import { buildRewind } from '../data/rewind'
 import { formatHour, formatNumber } from '../lib/format'
 import { useMediaQuery } from '../lib/hooks'
 import { isLaunchKey, LAUNCH_KEY } from '../lib/keys'
@@ -41,6 +42,7 @@ import { PosterStudio } from './PosterStudio'
 import { Pulse } from './Pulse'
 import { Race } from './Race'
 import { River, RiverTable } from './River'
+import { Rewind } from './Rewind'
 import { TopCharts } from './TopCharts'
 import { Tour, UpNext } from './Tour'
 import { TrackMenu, type Track } from './TrackMenu'
@@ -51,6 +53,7 @@ const TRACKS: Track[] = [
   { id: 'record', num: 'A1', title: 'The Record' },
   { id: 'eras', num: 'A2', title: 'Eras' },
   { id: 'race', num: 'A3', title: 'The Race' },
+  { id: 'rewind', num: 'A4', title: 'Your Rewind' },
   { id: 'clock', num: 'B1', title: 'Around the Clock' },
   { id: 'days', num: 'B2', title: 'Every Day' },
   { id: 'lovehate', num: 'B3', title: 'Love / Hate' },
@@ -141,6 +144,7 @@ export function Dashboard({ result, isSample, onReset }: Props) {
   // Everything below is computed from `plays`, so the year filter scopes the whole page
   const plays = useMemo(() => filterByYear(all, year), [all, year])
   const summary = useMemo(() => summarize(plays), [plays])
+  const rewind = useMemo(() => buildRewind(plays, all, year), [plays, all, year])
 
   // Colors follow the artist: all-time top 10 keep their color when you pick a year
   const allTop = useMemo(() => topItems(all, 'artist', 'time', TOP_ARTISTS).map((r) => r.label), [all])
@@ -571,6 +575,7 @@ export function Dashboard({ result, isSample, onReset }: Props) {
                 newArtists={newArtists}
                 onPlay={() => openTour(true)}
                 onPoster={() => makePoster(posterDesign)}
+                onRewind={() => jumpTo('rewind')}
               />
             )}
 
@@ -612,6 +617,10 @@ export function Dashboard({ result, isSample, onReset }: Props) {
               lede={`Total hours per artist, replayed ${bins.size} by ${bins.size}. Watch who pulls ahead.`}
             >
               {race.names.length > 1 ? <Race key={viewKey} bins={bins} race={race} colors={colors} /> : <NotEnough />}
+            </Chapter>
+
+            <Chapter id="rewind" num="A4" title="Your Rewind" hint="Your listening, with a story to tell. Five pages to explore." lede="The headline, the discoveries, the reunions. A personal recap with the numbers behind every story.">
+              <Rewind key={viewKey} data={rewind} year={year} years={years} onYear={setYear} />
             </Chapter>
 
             <Side label="Side B" title={SIDES.B} />
